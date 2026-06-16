@@ -1,0 +1,1 @@
+python tcga_cesc_emt_validation_complete.py --expression CESC_normalized.csv --clinical cesc_tcga_pan_can_atlas_2018_clinical_data.tsv --output tcga_cesc_emt_outputs\n
