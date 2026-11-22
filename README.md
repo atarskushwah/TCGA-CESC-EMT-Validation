@@ -1,6 +1,6 @@
-# TCGA-CESC EMT-Panel External Validation
+# TCGA-CESC EMT-Panel Tumor-Tissue Contextualization
 
-This repository provides reproducible code for external validation of a cervical cancer EMT-related gene-expression panel using TCGA-CESC tumor transcriptomic and clinical survival data.
+This repository provides reproducible code for complementary tumor-tissue transcriptomic contextualization of seven EMT-associated genes in TCGA-CESC. The TCGA tumor profiles do not externally validate the separate peripheral whole-blood RT-qPCR assay.
 
 ## Gene panel
 
@@ -64,8 +64,12 @@ Normalized TCGA-CESC RNA-seq data were integrated with clinical survival metadat
 
 ## Interpretation note
 
-TCGA-CESC tumor transcriptomics provides orthogonal validation of EMT-network behavior but is not equivalent to peripheral blood expression measured during cisplatin-based chemoradiotherapy. Weak or non-significant survival associations should not be overinterpreted. Static baseline tumor EMT expression may reflect tumor heterogeneity, stromal-matrix remodeling and epithelial-mesenchymal plasticity more strongly than dynamic therapy-induced EMT states.
+TCGA-CESC tumor transcriptomics provides complementary tumor-tissue expression and co-expression context, not functional validation of EMT activity or validation of peripheral whole-blood RNA measurements. Weak or non-significant survival associations should not be overinterpreted. Static baseline tumor EMT expression may reflect tumor heterogeneity, stromal-matrix remodeling and epithelial-mesenchymal plasticity more strongly than dynamic therapy-induced EMT states.
 
 ## Data availability wording
 
-The code used for TCGA-CESC external validation is available in this GitHub repository. TCGA-CESC RNA-seq and clinical data are publicly available from the Genomic Data Commons, UCSC Xena and cBioPortal TCGA PanCancer Atlas resources. Processed outputs include expression summary statistics, Spearman correlation matrices, Kaplan-Meier survival results, Cox regression tables and publication-ready figures.
+The code used for TCGA-CESC tumor-tissue contextualization is available in this GitHub repository. TCGA-CESC RNA-seq and clinical data are publicly available from the Genomic Data Commons, UCSC Xena and cBioPortal TCGA PanCancer Atlas resources. Processed outputs include expression summary statistics, Spearman correlation matrices, Kaplan-Meier survival results, Cox regression tables and publication-ready figures.
+
+## Separate whole-blood ROC internal assessment
+
+The [exploratory four-transcript blood ROC reproducibility protocol](blood_roc/README.md) documents a fixed-panel bootstrap analysis and a separate synthetic-data CI smoke test. No participant-level qPCR or clinical data are distributed in this public repository. This analysis is distinct from TCGA tumor-tissue contextualization and cannot be described as independent clinical validation.
