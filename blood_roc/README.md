@@ -38,3 +38,7 @@ The `blood_roc.yml` workflow runs a **synthetic-data smoke test** only. It tests
 ## TCGA-CESC distinction
 
 The TCGA-CESC cohort provides independent **tumor-tissue transcriptomic contextualization**. It is not external validation of this peripheral whole-blood diagnostic classifier, and its transcript abundance cannot establish functional EMT activity.
+
+## Subsequent source-data audit
+
+See [VCL normalization, original Youden threshold, and clinical-outcome reconciliation](VCL_clinical_source_reconciliation.md). The public note records identified aggregate discrepancies without distributing participant-level source data. The synthetic GitHub Actions check is not independent verification of patient-level results.
