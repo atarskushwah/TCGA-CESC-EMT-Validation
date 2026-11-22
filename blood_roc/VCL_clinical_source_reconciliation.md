@@ -26,3 +26,26 @@ The uploaded original Youden-index calculation identifies maximum index about 0.
 ## Confidentiality
 
 This protocol describes only formulas and cohort-level aggregates. Raw `.sav` files, individual-level observations, and workbooks are **not** committed or uploaded to GitHub. The existing GitHub Actions test uses synthetic data and is not evidence that privately held patient-level results have been independently reproduced.
+
+
+## Completed fixed-source recomputation (reanalysis 22 November 2026)
+
+Recalculation from the 62-case follow-up export using the documented zero log2-fold-change cutoff (up >0; down <0) yields these aggregate log-rank results. All P values are exploratory; individual participant-level data remain institutionally controlled.
+
+| Transcript | Up/down cases | PFS log-rank P | OS log-rank P |
+|---|---:|---:|---:|
+| CD44 | 46 / 16 | 0.2414 | 0.0670 |
+| CTNNB1 | 48 / 14 | 0.6081 | 0.3908 |
+| MMP7 | 44 / 18 | 0.8314 | 0.3391 |
+| MMP9 | 42 / 20 | 0.8109 | 0.0779 |
+| VCL (corrected −ΔΔCt) | 21 / 41 | 0.8416 | 0.8592 |
+| TIMP1 | 27 / 35 | 0.9865 | 0.7718 |
+| TIMP2 | 13 / 49 | 0.00355 | 0.5156 |
+
+Benjamini–Hochberg adjustment across seven PFS gene-wise log-rank tests gives an adjusted TIMP2 P value of approximately 0.0249. There were 28 PFS events and nine deaths; the TIMP2-positive group contains only 13 participants. The historical TIMP2 OS P=0.031 was **not reproduced** by this definition and is superseded by the recalculated P=0.516.
+
+The original Youden workbook supports sensitivity 77.4%, specificity 85.7% and probability threshold ≈0.6735 for the combined ROC score. The seven individual ROC curves can be reconstructed from the corrected expression dataset; the four-gene ROC and its fixed-panel bootstrap are unaffected by VCL normalization.
+
+**Clinical provenance:** The present cohort contains recorded follow-up duration (median 20 months, range 11–29) and event indicators; specific RECIST imaging dates and an administrative calendar cutoff are not independently recoverable from the available analysis export. The same-site prior publications provide general methodology only, not evidence that participants or clinical time points overlap.
+
+**Workflow scope:** This repository continues to provide a synthetic-data smoke test. It does not execute private-source outcome analysis on public CI or disclose records.
