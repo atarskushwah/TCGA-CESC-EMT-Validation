@@ -1,1 +1,2 @@
 pandas\nnumpy\nscipy\nmatplotlib\n
+scikit-learn
