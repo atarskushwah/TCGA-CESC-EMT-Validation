@@ -17,7 +17,7 @@ Among 62 cases, source VCL grouping gives 41 positive/21 negative observations, 
 
 The separately supplied local 62-case SPSS follow-up dataset contains 28 PFS events, nine OS deaths, and an observed follow-up median of 20 months (range 11–29). The adjusted Cox source analysis used a binary FIGO stage code (early I–II, n=33; advanced III–IV, n=29) with age and parity. The MMP9 adjusted PFS HR is approximately 0.880 (95% CI 0.798–0.971; P=0.011), reproducible with a Breslow-tied Cox fit. Exact time origin, censoring calendar date, and RECIST assessment timing still require site records.
 
-The survival categories in the submitted manuscript do not all match the stated `log2FC > 0` / `log2FC < 0` definition in the uploaded follow-up file. In particular, TIMP2 log-rank estimates differ from the historical figure. Do not claim the Kaplan–Meier analyses are reconciled until their original SPSS grouping derivation and input syntax are reviewed.
+The survival categories in the submitted manuscript do not all match the stated `log2FC > 0` / `log2FC < 0` definition in the uploaded follow-up file. In particular, TIMP2 log-rank estimates differ from the historical figure. The uploaded Kaplan–Meier SPSS viewer files are dated 30 March 2026, whereas the uploaded Cox viewer files and saved follow-up SAV file are dated 2 April 2026. That version difference is consistent with—but does not establish—a change in the analytical file or grouping definitions. Do not claim the Kaplan–Meier analyses are reconciled until their original SPSS grouping derivation and input syntax are reviewed.
 
 ## ROC threshold
 
